@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +17,10 @@
     />
 
     <link rel="preload" href="CSS/styles.css" as="style" />
+    <link rel="preload" href="CSS/galeria.css" as="style" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/galeria.css"/>
+
   </head>
   <body>
     <header>
@@ -36,18 +38,25 @@
     </div>
 
     <main class="contenedor sombra margen">
-      <h1>Mis certificados</h1>
 
-      <embed
-        width="100%"
-        height="680px"
-        class="visualizador"
-        src="certificados/certificado_1_merged.pdf"
-        type="application/pdf"
-      />
+      <div class="carrusel">
+        <div class="grande">
+          <img src="imagenes/proyecto1_r1.png" alt="" class="carrusel__imagen">
+          <img src="imagenes/proyecto2_r1.png" alt="" class="carrusel__imagen">
+        </div>
+
+        <ul class="puntos">
+          <li class="punto activo"></li>
+          <li class="punto"></li>
+        </ul>
+    </div>
+
+
     </main>
     <footer class="footer">
       <p>Todos los derechos reservados</p>
     </footer>
+
+<script src="js/script.js"></script>
   </body>
 </html>

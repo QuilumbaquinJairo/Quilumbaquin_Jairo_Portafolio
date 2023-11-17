@@ -1,0 +1,50 @@
+.carrusel {
+  width: 100%;
+  max-width: 120em;
+  padding: 0 1em;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.carrusel .grande {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  transform: translateX(0%);
+}
+
+.carrusel .carrusel__imagen{
+  width: calc( 100% / 2 - 1em);
+  min-height: 10vh;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+}
+
+.carrusel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  color: black;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: #FFFFFF;
+  background-color: #98c3a1;
+}
+
+.carrusel .punto.activo {
+  background-color: #25857d;
+}
